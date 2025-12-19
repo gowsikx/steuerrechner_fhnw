@@ -35,7 +35,7 @@ def kantonssteuer_solothurn(einkommen, kinder):
     """Kanton Solothurn: Kinderabzug 9'000 CHF pro Kind"""
     e = max(0, einkommen - kinder * 9000)
     if e > 310000:
-        return e * 0.105
+        return e * 0.115
     stufen = [(12000, 0), (4000, 0.045), (4000, 0.05), (3000, 0.065),
         (2000, 0.08), (3000, 0.09), (11000, 0.095), (15000, 0.1),
         (44000, 0.105), (212000, 0.115)]
